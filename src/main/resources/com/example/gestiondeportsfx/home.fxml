@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiondeportsfx.Controller.HomeController">
+   <children>
+      <ImageView id="backGround_sea_home" fitHeight="608.0" fitWidth="790.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Pokemon_sea_test.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="52.0" layoutY="34.0" prefHeight="86.0" prefWidth="110.0">
+         <children>
+            <ImageView id="ileColline" fitHeight="97.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/ile_coline-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox layoutX="52.0" layoutY="459.0" prefHeight="74.0" prefWidth="66.0">
+         <children>
+            <ImageView id="ileDesert" fitHeight="69.0" fitWidth="91.0" onMouseClicked="#afficheCharacteristique" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/ile_canyonstyle-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <HBox layoutX="371.0" layoutY="29.0" prefHeight="74.0" prefWidth="68.0">
+         <children>
+            <ImageView id="ileMontagne" fitHeight="84.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/ile_montagne-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children></HBox>
+   </children>
+</AnchorPane>
