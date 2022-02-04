@@ -13,8 +13,8 @@ public class App extends Application {
     private AnchorPane mainPanel;
     public static Scene mainScene;
     public Stage mainStage;
-    private static final int HEIGHT =600;
-    private static final int WIDTH =800;
+    private static final int HEIGHT =800;
+    private static final int WIDTH =900;
 
 
     public void start(Stage stage) throws IOException {

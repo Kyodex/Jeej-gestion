@@ -18,6 +18,7 @@ public class Bateau {
     }
 
     public Bateau() {
+        this.enMer=true;
     }
 
     public Image getImageNavire() {
@@ -56,9 +57,9 @@ public class Bateau {
         }
     }
 
-    public float distance(){
-       float distanceAparc= this.portArrivee.getX() + this.portArrivee.getY() + this.portDepart.getX() + this.portDepart.getY() ;
-       return (float)Math.sqrt(distanceAparc);
+    public double distance(){
+       double distanceAparc= this.portArrivee.getX() + this.portArrivee.getY() + this.portDepart.getX() + this.portDepart.getY() ;
+       return (double)Math.sqrt(distanceAparc);
     }
 
 }

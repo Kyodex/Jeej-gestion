@@ -1,19 +1,19 @@
 package com.example.gestiondeportsfx.Model;
 
 public class Port {
-    private  float x;
-    private float y;
+    private  double x;
+    private double y;
     private Quais quais;
 
     public Port(){}
 
-    public Port(float x,float y){
+    public Port(double x,double y){
         this.x=x;
         this.y=y;
         this.quais = new Quais();
     }
 
-    public Port(float x,float y , int nbQuai){
+    public Port(double x,double y , int nbQuai){
         this.x=x;
         this.y=y;
         this.quais = new Quais(nbQuai);
@@ -37,19 +37,19 @@ public class Port {
     }
 
 
-    public float getX() {
+    public double getX() {
         return x;
     }
 
-    public void setX(float x) {
+    public void setX(double x) {
         this.x = x;
     }
 
-    public float getY() {
+    public double getY() {
         return y;
     }
 
-    public void setY(float y) {
+    public void setY(double y) {
         this.y = y;
     }
 
