@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="anchorPane" fx:id="anchorPane" prefHeight="745.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiondeportsfx.Controller.HomeController">
+<AnchorPane id="anchorPane" fx:id="anchorPane" prefHeight="734.0" prefWidth="983.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiondeportsfx.Controller.HomeController">
    <children>
       <ImageView id="backGround_sea_home" fitHeight="739.0" fitWidth="745.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -49,7 +51,12 @@
             </ImageView>
          </children>
       </HBox>
-      <Button fx:id="deplacerButton" layoutX="785.0" layoutY="46.0" mnemonicParsing="false" onAction="#deplacement" text="Deplacer" />
+      <Button fx:id="deplacerButton" layoutX="755.0" layoutY="17.0" mnemonicParsing="false" onAction="#deplacement" text="DeplacerMaison test" />
       <HBox id="0" fx:id="maison" accessibleText="port" layoutX="607.0" layoutY="409.0" onMouseClicked="#afficheCharacteristique" prefHeight="84.0" prefWidth="104.0" />
+      <TitledPane animated="false" layoutX="755.0" layoutY="125.0" prefHeight="200.0" prefWidth="200.0" text="Dernier selectionner">
+         <content>
+            <TextArea fx:id="dernierSelectionerTextArea" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </TitledPane>
    </children>
 </AnchorPane>

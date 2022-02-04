@@ -1,11 +1,27 @@
 package com.example.gestiondeportsfx.Model;
 
+import java.util.ArrayList;
+
 public class Quais {
     private int nbQuais;
     private int quaisOcc;
+    private ArrayList<Bateau> bateauAQuai;
+
+
+
+    public ArrayList<Bateau> getBateauAQuai() {
+        return bateauAQuai;
+    }
+
+    public void setBateauAQuai(ArrayList<Bateau> bateauAQuai) {
+        this.bateauAQuai = bateauAQuai;
+    }
+
     //constructeur vide
     public Quais(){
         this.nbQuais = 3;
+        this.quaisOcc = 0;
+        this.bateauAQuai = new ArrayList<Bateau>();
     }
 
     public Quais(int nbQuai){
@@ -14,6 +30,8 @@ public class Quais {
         }else{
             this.nbQuais = 3;
         }
+        this.quaisOcc = 0;
+        this.bateauAQuai = new ArrayList<Bateau>();
     }
 
     public boolean ajouterBateau(){
@@ -56,5 +74,14 @@ public class Quais {
 
     public void setQuaisOcc(int quaisOcc) {
         this.quaisOcc = quaisOcc;
+    }
+
+    @Override
+    public String toString() {
+        return "Quais{" +
+                "nbQuais=" + nbQuais +
+                ", quaisOcc=" + quaisOcc +
+                ", bateauAQuai=" + bateauAQuai +
+                '}';
     }
 }

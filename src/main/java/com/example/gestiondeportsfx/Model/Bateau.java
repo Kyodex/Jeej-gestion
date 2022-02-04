@@ -3,6 +3,9 @@ package com.example.gestiondeportsfx.Model;
 import javafx.scene.image.Image;
 
 public class Bateau {
+    private int id;
+
+
     private Port portDepart;
     private Port portArrivee;
     private boolean enMer;
@@ -43,6 +46,7 @@ public class Bateau {
         }else{
             a.getQuais().ajouterBateau();
             this.portArrivee = a ;
+            this.enMer = false;
         }
     }
 
@@ -61,5 +65,14 @@ public class Bateau {
        double distanceAparc= this.portArrivee.getX() + this.portArrivee.getY() + this.portDepart.getX() + this.portDepart.getY() ;
        return (double)Math.sqrt(distanceAparc);
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
 }

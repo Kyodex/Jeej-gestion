@@ -14,7 +14,7 @@ public class App extends Application {
     public static Scene mainScene;
     public Stage mainStage;
     private static final int HEIGHT =800;
-    private static final int WIDTH =900;
+    private static final int WIDTH =1000;
 
 
     public void start(Stage stage) throws IOException {
