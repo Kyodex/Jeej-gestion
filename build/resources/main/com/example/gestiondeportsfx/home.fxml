@@ -11,6 +11,11 @@
 
 <AnchorPane id="anchorPane" fx:id="anchorPane" prefHeight="734.0" prefWidth="983.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiondeportsfx.Controller.HomeController">
    <children>
+      <ImageView fitHeight="739.0" fitWidth="247.0" layoutX="737.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/menu.jpg" />
+         </image>
+      </ImageView>
       <ImageView id="backGround_sea_home" fitHeight="739.0" fitWidth="745.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/Pokemon_sea_test.png" />
@@ -27,7 +32,7 @@
       </VBox>
       <VBox layoutX="52.0" layoutY="459.0" prefHeight="74.0" prefWidth="66.0">
          <children>
-            <ImageView id="2" fx:id="ileDesert" accessibleText="port" fitHeight="69.0" fitWidth="91.0" onMouseClicked="#afficheCharacteristique" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="2" fx:id="ileDesert" accessibleText="port" fitHeight="85.0" fitWidth="88.0" onMouseClicked="#afficheCharacteristique" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/ile_canyonstyle-removebg-preview.png" />
                </image>
@@ -44,19 +49,37 @@
          </children></HBox>
       <HBox layoutX="241.0" layoutY="336.0" prefHeight="29.0" prefWidth="30.0">
          <children>
-            <ImageView id="1" fx:id="premierNavire" accessibleText="bateau" fitHeight="31.0" fitWidth="42.0" onMouseClicked="#afficheCharacteristique" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="0" fx:id="premierNavire" accessibleText="bateau" fitHeight="31.0" fitWidth="42.0" onMouseClicked="#afficheCharacteristique" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/vaisseau0.png" />
                </image>
             </ImageView>
          </children>
       </HBox>
-      <Button fx:id="deplacerButton" layoutX="755.0" layoutY="17.0" mnemonicParsing="false" onAction="#deplacement" text="DeplacerMaison test" />
+      <Button fx:id="deplacerButton" layoutX="749.0" layoutY="80.0" mnemonicParsing="false" onAction="#deplacement" text="DeplacerMaison test" />
       <HBox id="0" fx:id="maison" accessibleText="port" layoutX="607.0" layoutY="409.0" onMouseClicked="#afficheCharacteristique" prefHeight="84.0" prefWidth="104.0" />
-      <TitledPane animated="false" layoutX="755.0" layoutY="125.0" prefHeight="200.0" prefWidth="200.0" text="Dernier selectionner">
+      <TitledPane animated="false" layoutX="741.0" layoutY="125.0" prefHeight="200.0" prefWidth="241.0" text="Dernier selectionner">
          <content>
-            <TextArea fx:id="dernierSelectionerTextArea" prefHeight="200.0" prefWidth="200.0" />
+            <TextArea fx:id="dernierSelectionerTextArea" prefHeight="174.0" prefWidth="216.0" />
          </content>
       </TitledPane>
+      <Button fx:id="creerBateau" layoutX="886.0" layoutY="80.0" mnemonicParsing="false" onAction="#creerBateau" text="Créer Bateau" />
+      <HBox layoutX="165.0" layoutY="182.0" prefHeight="69.0" prefWidth="68.0">
+         <children>
+            <ImageView fx:id="imgViewNavire" fitHeight="74.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox layoutX="583.0" layoutY="71.0" prefHeight="57.0" prefWidth="53.0">
+         <children>
+            <ImageView fx:id="imgViewNavireA" fitHeight="69.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <Button layoutX="780.0" layoutY="345.0" mnemonicParsing="false" onAction="#voyager" text="Accoster" />
+      <Button fx:id="quitter" layoutX="880.0" layoutY="345.0" mnemonicParsing="false" onAction="#quitter" text="Quitter Port" />
+      <HBox layoutX="345.0" layoutY="630.0" prefHeight="57.0" prefWidth="53.0">
+         <children>
+            <ImageView fx:id="imgViewNavireB" fitHeight="69.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
    </children>
 </AnchorPane>

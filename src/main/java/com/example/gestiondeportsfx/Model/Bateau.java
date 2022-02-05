@@ -1,6 +1,7 @@
 package com.example.gestiondeportsfx.Model;
 
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class Bateau {
     private int id;
@@ -10,6 +11,16 @@ public class Bateau {
     private Port portArrivee;
     private boolean enMer;
     private Image imageNavire;
+    private ImageView imageNavireView;
+
+
+    public ImageView getImageNavireView() {
+        return imageNavireView;
+    }
+
+    public void setImageNavireView(ImageView imageNavireView) {
+        this.imageNavireView = imageNavireView;
+    }
 
     public Bateau(Port portArrivee) {
         if(portArrivee.getQuais().estPlein()){
@@ -61,10 +72,15 @@ public class Bateau {
         }
     }
 
-    public double distance(){
-       double distanceAparc= this.portArrivee.getX() + this.portArrivee.getY() + this.portDepart.getX() + this.portDepart.getY() ;
-       return (double)Math.sqrt(distanceAparc);
+    public double distance() {
+        if (this.portArrivee != null || this.portDepart != null) {
+            double distanceAparc = this.portArrivee.getX() + this.portArrivee.getY() + this.portDepart.getX() + this.portDepart.getY();
+            return (double) Math.sqrt(distanceAparc);
+        }
+        return -1;
     }
+
+
 
     public int getId() {
         return id;
